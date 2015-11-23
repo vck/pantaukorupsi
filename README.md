@@ -5,73 +5,82 @@ pemantau berita bersentimen korupsi yang terjadi di Indonesia, Riau khususnya. p
 # usage
 
 ```
-In [1]: from pantau import *
+vickydasta@lab ~/dev/git/pantaukorupsi/script $ ipython
+Python 2.7.6 (default, Jun 22 2015, 17:58:13)
+Type "copyright", "credits" or "license" for more information.
+
+IPython 1.2.1 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: from pantau import getdata
 
 In [2]: d = getdata()
 
 In [3]: d
 Out[3]:
-[{'11060': 'politisi kih ngotot pangkas kewenangan kpk.html'},
- {'11015': 'diperiksa penyidik kpk perlihatkan absen anggota dprd.html'},
- {'10987': 'bareskrim tetapkan bupati bengkalis tersangka dugaan korupsi.html'},
- {'10958': 'terima suap gubri nonaktif divonis 6 tahun.html'},
- {'10952': 'terdakwa tppu minyak dipenjara 4 tahun adiknya divonis bebas.html'},
- {'10943': 'mantan menteri bumn dahlan iskan tersangka.html'},
- {'10929': 'annas maamun dilarikan ke rumah sakit.html'},
- {'10925': 'mantan bupati pelalawan terancam masuk penjara lagi.html'},
- {'10924': 'mabes polri tetapkan direktur rsud embung fatimah tersangka korupsi alkes.html'},
- {'10916': 'jaksa gagal eksekusi terpidana korupsi 72 miliar.html'},
- {'11155': 'kesaksian politisi pkb di pengadilan tipikor dibantah.html'},
- {'11060': 'politisi kih ngotot pangkas kewenangan kpk.html'},
- {'11015': 'diperiksa penyidik kpk perlihatkan absen anggota dprd.html'},
- {'10987': 'bareskrim tetapkan bupati bengkalis tersangka dugaan korupsi.html'},
- {'10958': 'terima suap gubri nonaktif divonis 6 tahun.html'},
- {'10952': 'terdakwa tppu minyak dipenjara 4 tahun adiknya divonis bebas.html'},
- {'10943': 'mantan menteri bumn dahlan iskan tersangka.html'},
- {'10929': 'annas maamun dilarikan ke rumah sakit.html'},
- {'10925': 'mantan bupati pelalawan terancam masuk penjara lagi.html'},
- {'10924': 'mabes polri tetapkan direktur rsud embung fatimah tersangka korupsi alkes.html'},
- {'10916': 'jaksa gagal eksekusi terpidana korupsi 72 miliar.html'},
- {'10917': 'terjerat kasus korupsi kaban bpbpk pekanbaru nonaktif.html'},
- {'11155': 'kesaksian politisi pkb di pengadilan tipikor dibantah.html'},
- {'11138': 'sidang korupsi batal karena pesawat jaksa kpk gagal mendarat.html'},
- {'11060': 'politisi kih ngotot pangkas kewenangan kpk.html'},
- {'11027': 'kasus korupsi bansos berkas eks ketua dprd diserahkan ke kejati riau.html'},
- {'11015': 'diperiksa penyidik kpk perlihatkan absen anggota dprd.html'},
- {'10987': 'bareskrim tetapkan bupati bengkalis tersangka dugaan korupsi.html'},
- {'10962': 'terdakwa kasus k2i jalani sidang perdana.html'},
- {'10958': 'terima suap gubri nonaktif divonis 6 tahun.html'},
- {'10952': 'terdakwa tppu minyak dipenjara 4 tahun adiknya divonis bebas.html'},
- {'10946': 'dahlan siap bertanggung jawab.html'},
- {'10944': 'dahlan iskan dicegah ke luar negeri.html'},
- {'10943': 'mantan menteri bumn dahlan iskan tersangka.html'},
- {'10934': 'korupsi baju koko eks kepala bkd hanya divonis 1 tahun.html'},
- {'10929': 'annas maamun dilarikan ke rumah sakit.html'},
- {'10926': 'azmun heran dijadikan tersangka kasus pengadaan lahan bakti praja.html'},
- {'10925': 'mantan bupati pelalawan terancam masuk penjara lagi.html'},
- {'10924': 'mabes polri tetapkan direktur rsud embung fatimah tersangka korupsi alkes.html'},
- {'10916': 'jaksa gagal eksekusi terpidana korupsi 72 miliar.html'},
- {'10917': 'terjerat kasus korupsi kaban bpbpk pekanbaru nonaktif.html'},
- {'10908': 'mantan kakan satpol pp kampar ditahan.html'},
- {'10866': 'asisten ii riau tersangka korupsi jembatan.html'},
- {'10854': 'eks ketua dprd riau diperiksa penyidik kpk.html'},
- {'10851': 'asisten ii pemprov diperiksa penyidik kpk.html'},
- {'10823': 'annas maamun dimarahi hakim tipikor.html'},
- {'10821': 'tim pidsus kajati riau geledah kantor bupati rohil.html'},
- {'10802': 'menderita sakit maag akut annas maamun tak hadiri sidang.html'},
- {'10799': 'dugaan korupsi pengadaan buku 15 saksi diperiksa kejari.html'},
- {'10760': 'annas maamun diboyong ke rutan suka miskin.html'},
- {'10761': 'annas maamun sidang perdana di tipikor bandung.html'},
- {'10748': 'di kpk sekdaprov riau ditanyai soal apbd p 2014.html'},
- {'11155': 'kesaksian politisi pkb di pengadilan tipikor dibantah.html'},
- {'11155': 'kesaksian politisi pkb di pengadilan tipikor dibantah.html'},
- {'11138': 'sidang korupsi batal karena pesawat jaksa kpk gagal mendarat.html'},
- {'11060': 'politisi kih ngotot pangkas kewenangan kpk.html'},
- {'11060': 'politisi kih ngotot pangkas kewenangan kpk.html'},
- {'11027': 'kasus korupsi bansos berkas eks ketua dprd diserahkan ke kejati riau.html'}]
+[{11060: 'politisi kih ngotot pangkas kewenangan kpk.html'},
+ {11015: 'diperiksa penyidik kpk perlihatkan absen anggota dprd.html'},
+ {10987: 'bareskrim tetapkan bupati bengkalis tersangka dugaan korupsi.html'},
+ {10958: 'terima suap gubri nonaktif divonis 6 tahun.html'},
+ {10952: 'terdakwa tppu minyak dipenjara 4 tahun adiknya divonis bebas.html'},
+ {10943: 'mantan menteri bumn dahlan iskan tersangka.html'},
+ {10929: 'annas maamun dilarikan ke rumah sakit.html'},
+ {10925: 'mantan bupati pelalawan terancam masuk penjara lagi.html'},
+ {10924: 'mabes polri tetapkan direktur rsud embung fatimah tersangka korupsi alkes.html'},
+ {10916: 'jaksa gagal eksekusi terpidana korupsi 72 miliar.html'},
+ {11155: 'kesaksian politisi pkb di pengadilan tipikor dibantah.html'},
+ {11060: 'politisi kih ngotot pangkas kewenangan kpk.html'},
+ {11015: 'diperiksa penyidik kpk perlihatkan absen anggota dprd.html'},
+ {10987: 'bareskrim tetapkan bupati bengkalis tersangka dugaan korupsi.html'},
+ {10958: 'terima suap gubri nonaktif divonis 6 tahun.html'},
+ {10952: 'terdakwa tppu minyak dipenjara 4 tahun adiknya divonis bebas.html'},
+ {10943: 'mantan menteri bumn dahlan iskan tersangka.html'},
+ {10929: 'annas maamun dilarikan ke rumah sakit.html'},
+ {10925: 'mantan bupati pelalawan terancam masuk penjara lagi.html'},
+ {10924: 'mabes polri tetapkan direktur rsud embung fatimah tersangka korupsi alkes.html'},
+ {10916: 'jaksa gagal eksekusi terpidana korupsi 72 miliar.html'},
+ {10917: 'terjerat kasus korupsi kaban bpbpk pekanbaru nonaktif.html'},
+ {11155: 'kesaksian politisi pkb di pengadilan tipikor dibantah.html'},
+ {11138: 'sidang korupsi batal karena pesawat jaksa kpk gagal mendarat.html'},
+ {11060: 'politisi kih ngotot pangkas kewenangan kpk.html'},
+ {11027: 'kasus korupsi bansos berkas eks ketua dprd diserahkan ke kejati riau.html'},
+ {11015: 'diperiksa penyidik kpk perlihatkan absen anggota dprd.html'},
+ {10987: 'bareskrim tetapkan bupati bengkalis tersangka dugaan korupsi.html'},
+ {10962: 'terdakwa kasus k2i jalani sidang perdana.html'},
+ {10958: 'terima suap gubri nonaktif divonis 6 tahun.html'},
+ {10952: 'terdakwa tppu minyak dipenjara 4 tahun adiknya divonis bebas.html'},
+ {10946: 'dahlan siap bertanggung jawab.html'},
+ {10944: 'dahlan iskan dicegah ke luar negeri.html'},
+ {10943: 'mantan menteri bumn dahlan iskan tersangka.html'},
+ {10934: 'korupsi baju koko eks kepala bkd hanya divonis 1 tahun.html'},
+ {10929: 'annas maamun dilarikan ke rumah sakit.html'},
+ {10926: 'azmun heran dijadikan tersangka kasus pengadaan lahan bakti praja.html'},
+ {10925: 'mantan bupati pelalawan terancam masuk penjara lagi.html'},
+ {10924: 'mabes polri tetapkan direktur rsud embung fatimah tersangka korupsi alkes.html'},
+ {10916: 'jaksa gagal eksekusi terpidana korupsi 72 miliar.html'},
+ {10917: 'terjerat kasus korupsi kaban bpbpk pekanbaru nonaktif.html'},
+ {10908: 'mantan kakan satpol pp kampar ditahan.html'},
+ {10866: 'asisten ii riau tersangka korupsi jembatan.html'},
+ {10854: 'eks ketua dprd riau diperiksa penyidik kpk.html'},
+ {10851: 'asisten ii pemprov diperiksa penyidik kpk.html'},
+ {10823: 'annas maamun dimarahi hakim tipikor.html'},
+ {10821: 'tim pidsus kajati riau geledah kantor bupati rohil.html'},
+ {10802: 'menderita sakit maag akut annas maamun tak hadiri sidang.html'},
+ {10799: 'dugaan korupsi pengadaan buku 15 saksi diperiksa kejari.html'},
+ {10760: 'annas maamun diboyong ke rutan suka miskin.html'},
+ {10761: 'annas maamun sidang perdana di tipikor bandung.html'},
+ {10748: 'di kpk sekdaprov riau ditanyai soal apbd p 2014.html'},
+ {11155: 'kesaksian politisi pkb di pengadilan tipikor dibantah.html'},
+ {11155: 'kesaksian politisi pkb di pengadilan tipikor dibantah.html'},
+ {11138: 'sidang korupsi batal karena pesawat jaksa kpk gagal mendarat.html'},
+ {11060: 'politisi kih ngotot pangkas kewenangan kpk.html'},
+ {11060: 'politisi kih ngotot pangkas kewenangan kpk.html'},
+ {11027: 'kasus korupsi bansos berkas eks ketua dprd diserahkan ke kejati riau.html'}]
 
-In [4]: quit
-vickydasta@lab ~/dev/git/pantaukorupsi/script $
+In [4]:
 
 
 ```
