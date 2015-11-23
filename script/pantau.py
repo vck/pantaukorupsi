@@ -39,7 +39,7 @@ def geturl():
 
 def newtitle(url):
     form = url.split('-') # deform url form
-    id = form[0] # get news id
+    id = int(form[0]) # get news id
     form.pop(0) # remove id
     # rm html
     title = ' '.join(form) # join all words
