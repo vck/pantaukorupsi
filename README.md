@@ -103,6 +103,6 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 # Author
 
-`vickydasta`
-
-[Andre Christoga](http://christoga.github.io)
+[![Fahad Ibnay Heylaal](https://avatars0.githubusercontent.com/u/14870769?v=3&s=460)](http://fahad19.com) | [![Sindre Sorhus](https://avatars3.githubusercontent.com/u/7861544?v=3&s=460)](http://sindresorhus.com)
+:---:|:---:
+[Andre Christoga](http://christoga.github.io) | [Vicky Vernando Dasta](http://vickydasta.github.io)
