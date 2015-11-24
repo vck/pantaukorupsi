@@ -1,6 +1,6 @@
 # author
 
-[`vickydasta`](vickydasta.github.io)
+[`vickydasta`](http://vickydasta.github.io)
 
 # contributors
 
