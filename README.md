@@ -110,3 +110,5 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 # Author
 
 `vickydasta`
+
+[Andre Christoga](http://christoga.github.io)
