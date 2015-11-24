@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 __author__ = 'vickydasta'
+__author__ = 'andrechristoga'
 
 from urllib2 import urlopen
 import lxml.html
