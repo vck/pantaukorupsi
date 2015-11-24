@@ -2,6 +2,12 @@
 
 pemantau berita bersentimen korupsi yang terjadi di Indonesia, Riau khususnya. pantaukorupsi menggunakan `lxml parser` sebagai parser tag HTML `<a href=<path> ></a>` dari halaman website portal news, kemudian melakukan filtering sentiment `korupsi` terhadap URL yang telah ter-parser. ** untuk saat ini, karena terkendala masalah teknikal, hanya menggunakan 1 sumber**.
 
+current hosts:
+
+* [pekanbaru.tribunnews.com](http://pekanbaru.tribunnews.com/tag/korupsi)
+* [pekanbaruexpress.com](http://www.pekanbaruexpress.com/korupsi.html)
+
+
 # usage
 
 ```
