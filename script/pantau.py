@@ -16,7 +16,7 @@ def geturl():
     try:
         html_data = urlopen(host).read()
     except:
-        raise Exception('Something were wrong...')
+        raise Exception('Something went wrong...')
 
     parser = lxml.html.fromstring(html_data)
 
