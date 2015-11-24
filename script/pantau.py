@@ -46,4 +46,32 @@ def newtitle(url):
     return {id:title}
 
 def getdata():
-    return [newtitle(url) for url in geturl()]
+    data = {}
+    for url in geturl():
+        f = newtitle(url)
+        data[f.keys()[0]] = f.values()
+    return data
+
+
+def getraw(data):
+    raw = []
+    for item in data:
+        raw.append(item[0])
+
+    return ' '.join(raw)
+
+def tf(raw):
+    # term frequency
+    n = {}
+    for k in raw.split():
+        n[k] = raw.split().count(k) # count how many frequency of k in raw
+
+    return n
+
+
+
+if __name__ == '__main__':
+    data = getdata()
+    print getdata()
+    print getraw(data.values())
+    print tf(getraw(data.values()))
