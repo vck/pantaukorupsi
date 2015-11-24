@@ -7,6 +7,7 @@ from urllib2 import urlopen
 import lxml.html
 
 host = 'http://www.pekanbaruexpress.com/korupsi.html'
+host2 = 'http://pekanbaru.tribunnews.com/tag/korupsi'
 
 def geturl():
     '''
