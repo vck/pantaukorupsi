@@ -9,13 +9,13 @@ host = 'http://www.pekanbaruexpress.com/korupsi.html'
 
 def geturl():
     '''
-    parser url bersentimen korupsi
+    Parser url bersentimen korupsi
     '''
 
     try:
         html_data = urlopen(host).read()
     except:
-        raise Exception('something were wrong...')
+        raise Exception('Something were wrong...')
 
     parser = lxml.html.fromstring(html_data)
 
