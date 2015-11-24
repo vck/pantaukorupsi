@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 __author__ = 'vickydasta'
+__author__ = 'andrechristoga'
 
 from urllib2 import urlopen
 import lxml.html
@@ -9,13 +10,13 @@ host = 'http://www.pekanbaruexpress.com/korupsi.html'
 
 def geturl():
     '''
-    parser url bersentimen korupsi
+    Parser url bersentimen korupsi
     '''
 
     try:
         html_data = urlopen(host).read()
     except:
-        raise Exception('something were wrong...')
+        raise Exception('Something went wrong...')
 
     parser = lxml.html.fromstring(html_data)
 
