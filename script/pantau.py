@@ -55,6 +55,7 @@ def getdata():
 
 
 def getraw(data):
+    # get raw of links (link-append-title-whatever) into (link append title whatever)
     raw = []
     for item in data:
         raw.append(item[0])
@@ -62,7 +63,7 @@ def getraw(data):
     return ' '.join(raw)
 
 def tf(raw):
-    # term frequency
+    # term frequency function added
     n = {}
     for k in raw.split():
         n[k] = raw.split().count(k) # count how many frequency of k in raw
